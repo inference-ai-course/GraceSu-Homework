@@ -10,8 +10,8 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 
 @app.post("/chat/")
 async def chat_endpoint(file: UploadFile = File(...)):
-    audio_bytes = await file.read()
     # ASR → LLM → TTS
+    audio_bytes = await file.read()
     user_text = transcribe_audio(audio_bytes)
     bot_text = generate_response(user_text)
     audio_path = synthesize_speech(bot_text)
@@ -24,5 +24,4 @@ async def index():
 
 @app.get("/history/")
 async def history():
-    print("[INFO] Conversation History:", conversation_history)
     return conversation_history

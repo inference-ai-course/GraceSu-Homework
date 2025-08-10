@@ -14,7 +14,7 @@
 <body>
     <h1>Voice Chatbot</h1>
     <div id="conversation">
-        <h2>Conversation Memory</h2>
+        <h2>Conversation</h2>
         <div id="history"></div>
     </div>
     <form id="audioForm">
@@ -22,13 +22,17 @@
         <input type="file" id="audioInput" name="file" accept="audio/*">
         <button type="submit">Send</button>
     </form>
-    <div style="margin: 1em 0;">
-        <button id="micBtn">🎤 Record</button>
-        <span id="micStatus"></span>
-    </div>
-    <div id="responseAudio"></div>
 
-    <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+    <div id="inputAudio">
+        <h3>Input Audio</h3>
+        <audio id="inputAudioPlayer" controls autoplay></audio>
+    </div>
+
+    <div id="responseAudio">
+        <h3>Response Audio</h3>
+        <div id="responseAudioContent"></div>
+    </div>
+
     <script src="/static/app.js"></script>
 </body>
 </html>
