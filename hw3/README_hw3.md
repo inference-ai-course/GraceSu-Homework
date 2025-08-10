@@ -5,7 +5,10 @@ Name: Grace Su
 ## Voice Agent
 
 Video demo:
-https://github.com/inference-ai-course/GraceSu-Homework/blob/main/hw3/inference_ai_hw3_result.mp4
+
+
+https://github.com/user-attachments/assets/cb35067f-c05a-43cb-abd8-19e5faaea49a
+
 
 ## Project Structure
 
