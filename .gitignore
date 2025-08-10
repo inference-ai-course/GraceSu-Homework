@@ -1,3 +1,9 @@
+## CUSTOM
+*.onnx
+*.json
+*.wav
+*.webm
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
