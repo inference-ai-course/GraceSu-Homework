@@ -1,0 +1,6 @@
+# allow chunks.json to be committed
+!chunks.json
+
+embeddings/
+pdfs/
+papers.json
